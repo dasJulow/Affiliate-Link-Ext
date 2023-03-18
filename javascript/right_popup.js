@@ -60,7 +60,7 @@ async function getVideoDescriptions(channelId, numberOfVideos) {
       if (videoDescriptions.length > 0) { 
   
         // Construct the URL with the videoDescriptions array as a parameter
-        const url = `select_links.html?videoDescriptions=${encodeURIComponent(JSON.stringify(videoDescriptions))}`;
+        const url = chrome.runtime.getURL('views/select_links.html') + `?videoDescriptions=${encodeURIComponent(JSON.stringify(videoDescriptions))}`;
   
         // Redirect to select_links.html 
         const selectLinksWindow = window.open(url, '_blank');
@@ -106,3 +106,5 @@ window.addEventListener('click', function(event) {
     dropdownContent.classList.remove('show');
   }
 });
+
+
