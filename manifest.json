@@ -13,7 +13,17 @@
     "webRequest",
     "*://*.google.com/",
     "*://www.amazon.com/",
-    "*://www.youtube.com/"
+    "*://www.youtube.com/",
+    "https://www.googleapis.com/",
+    "https://www.googleapis.com/*",
+    "https://www.googleapis.com/auth/*",
+    "https://securetoken.googleapis.com/*",
+    "https://firebase.googleapis.com/*",
+    "https://firestore.googleapis.com/*",
+    "https://identitytoolkit.googleapis.com/*",
+    "https://www.googleapis.com/drive/*",
+    "https://www.googleapis.com/drive/v3/*"
+  
 
 
     
@@ -35,10 +45,15 @@
     "default_title": "My Extension",
     "default_popup": "popup.html"
   },
+
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js; object-src 'self'",
+
+
   "icons": {
     "16": "images/zi.png"
 
   }
+
 
 
 }

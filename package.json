@@ -1,0 +1,27 @@
+{
+  "name": "ext_10_03",
+  "version": "1.0.0",
+  "description": "Chromium extension that scraps youtube data for affiliate links and automatically applies them when shopping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasJulow/Affiliate-Link-Ext.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dasJulow/Affiliate-Link-Ext/issues"
+  },
+  "homepage": "https://github.com/dasJulow/Affiliate-Link-Ext#readme",
+  "dependencies": {
+    "firebase": "^9.18.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
+}
