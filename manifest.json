@@ -30,7 +30,7 @@
   ],
 
   "background": {
-    "service_worker": "javascritp/background.js"
+    "service_worker": "src/background.js"
 },
 
 
@@ -46,12 +46,13 @@
     "default_popup": "popup.html"
   },
 
-  "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js; object-src 'self'",
-
-
   "icons": {
     "16": "images/zi.png"
 
+  },
+
+  "service_worker": {
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js; object-src 'self'"
   }
 
 
