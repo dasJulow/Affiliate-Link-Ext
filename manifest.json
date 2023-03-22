@@ -11,9 +11,15 @@
     "webNavigation",
     "tabs",
     "webRequest",
-    "*://*.google.com/",
-    "*://www.amazon.com/",
-    "*://www.youtube.com/",
+    "identity"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "host_permissions": [
+    "<all_urls>",
     "https://www.googleapis.com/",
     "https://www.googleapis.com/*",
     "https://www.googleapis.com/auth/*",
@@ -23,21 +29,6 @@
     "https://identitytoolkit.googleapis.com/*",
     "https://www.googleapis.com/drive/*",
     "https://www.googleapis.com/drive/v3/*"
-  
-
-
-    
-  ],
-
-  "background": {
-    "service_worker": "src/background.js"
-},
-
-
-
-  
-  "host_permissions":[
-    "<all_urls>"
   ],
 
   "action": {
@@ -48,13 +39,7 @@
 
   "icons": {
     "16": "images/zi.png"
-
-  },
-
-  "service_worker": {
-    "content_security_policy": "script-src 'self' https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js; object-src 'self'"
   }
 
-
-
 }
+

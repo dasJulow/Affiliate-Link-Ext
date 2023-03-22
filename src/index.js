@@ -13,7 +13,9 @@ const firebaseApp = initializeApp( {
     appId: "1:679100910256:web:63945f1ec2c9449635c975"
   }); 
 
-  const auth = getAuth(firebaseApp)
+  const app = initializeApp(firebaseApp);
+
+  const auth = getAuth(app)
  // const db = getFirestore(firebaseApp)
 
   // auth state detection
@@ -24,3 +26,4 @@ const firebaseApp = initializeApp( {
       console.log('No user');
     }
   });
+
